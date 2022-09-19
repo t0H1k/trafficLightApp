@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina6_5" orientation="portrait" appearance="dark"/>
+    <device id="retina6_1" orientation="portrait" appearance="dark"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -17,22 +17,25 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7Oz-3g-H22">
-                                <rect key="frame" x="142" y="274" width="130" height="130"/>
+                                <rect key="frame" x="142" y="278" width="130" height="130"/>
                                 <color key="backgroundColor" systemColor="systemYellowColor"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="7Oz-3g-H22" secondAttribute="height" multiplier="1:1" id="jL2-1l-UjN"/>
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uZa-bB-saM">
-                                <rect key="frame" x="142" y="444" width="130" height="130"/>
+                                <rect key="frame" x="142" y="448" width="130" height="130"/>
                                 <color key="backgroundColor" systemColor="systemGreenColor"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="uZa-bB-saM" secondAttribute="height" multiplier="1:1" id="aqU-tm-gna"/>
                                 </constraints>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dzq-E2-btj">
-                                <rect key="frame" x="162.66666666666666" y="681" width="89" height="48"/>
+                                <rect key="frame" x="135.5" y="681" width="143" height="48"/>
                                 <color key="backgroundColor" red="0.0" green="0.36883322260000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="143" id="EcK-SL-x2I"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                 <state key="normal" title="START">
@@ -43,7 +46,7 @@
                                 </connections>
                             </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8Zp-Kg-a67">
-                                <rect key="frame" x="142" y="104" width="130" height="130"/>
+                                <rect key="frame" x="142" y="108" width="130" height="130"/>
                                 <color key="backgroundColor" systemColor="systemRedColor"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="8Zp-Kg-a67" secondAttribute="height" multiplier="1:1" id="j4D-Pn-3ee"/>
@@ -75,7 +78,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="78.260869565217391" y="-29.464285714285712"/>
+            <point key="canvasLocation" x="76.875" y="-29.577464788732396"/>
         </scene>
     </scenes>
     <resources>

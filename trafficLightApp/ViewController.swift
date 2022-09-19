@@ -13,22 +13,23 @@ class ViewController: UIViewController {
     @IBOutlet var greenTrafficLight: UIView!
     @IBOutlet var trafficLightButton: UIButton!
     
-    override func viewDidLayoutSubviews() {
-        redTrafficLight.layer.cornerRadius = redTrafficLight.frame.height / 2
-        yellowTrafficLight.layer.cornerRadius = yellowTrafficLight.frame.height / 2
-        greenTrafficLight.layer.cornerRadius =  greenTrafficLight.frame.height / 2
-    }
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         trafficLightButton.layer.cornerRadius = 10
         redTrafficLight.alpha = 0.3
         yellowTrafficLight.alpha = 0.3
         greenTrafficLight.alpha = 0.3
+        view.backgroundColor = .black
+    }
+    
+    override func viewDidLayoutSubviews() {
+        redTrafficLight.layer.cornerRadius = redTrafficLight.frame.height / 2
+        yellowTrafficLight.layer.cornerRadius = yellowTrafficLight.frame.height / 2
+        greenTrafficLight.layer.cornerRadius =  greenTrafficLight.frame.height / 2
     }
     
     @IBAction func trafficLightButtonDidTapped() {
-        if trafficLightButton.titleLabel!.text == "START" {
+        if trafficLightButton.currentTitle == "START" {
             redTrafficLight.alpha = 1
             trafficLightButton.setTitle("NEXT", for: .normal)
         } else if redTrafficLight.alpha == 1 {
