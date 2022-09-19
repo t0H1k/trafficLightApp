@@ -19,7 +19,6 @@ class ViewController: UIViewController {
         redTrafficLight.alpha = 0.3
         yellowTrafficLight.alpha = 0.3
         greenTrafficLight.alpha = 0.3
-        view.backgroundColor = .black
     }
     
     override func viewDidLayoutSubviews() {
